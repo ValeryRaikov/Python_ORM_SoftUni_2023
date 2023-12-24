@@ -1,0 +1,29 @@
+{% extends 'common/base.html' %}
+{% load static %}
+{% block content %}
+
+    <section id="image">
+        <h2 class="h2">My own image</h2>
+        <img class="img" src="{% static 'images/creator_profile_pic.png' %}" alt="Creator Image"
+        width="650" height="650">
+    </section>
+
+    <section id="biography">
+        <h2 class="h2">My short representation...</h2>
+        <p class="p">
+            Hello there, I'm Valery.
+            <br>
+            I am 20 years old, studying computer and software engineering at TU-Sofia as well as SoftUni.
+            <br>
+            This is my first ever web page with Django framework and Python, but I promise I will continue
+            my journey and I will gain much more experience.
+            <br>
+            See you soon guys! Enjoy...
+        </p>
+    </section>
+
+    <footer>
+        <p class="p">&copy; 2023 Creator Page</p>
+    </footer>
+
+{% endblock %}
